@@ -1,0 +1,184 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PressStart2P-Regular';
+    src: url('../fonts/PressStart2P-Regular.ttf') /* local onde o arquivo da fonte é encontrado */
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    background-color: blanchedalmond;
+    height: 100%;
+    min-height: 100%;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+[game] {
+    margin-top: 80px;
+    position: relative;
+    height: 600px;
+    width: 1000px;
+    background-color: beige;
+    border: 12px solid black;
+    overflow: hidden;
+    background-image: url('../imgs/minecraft.png');
+    background-size: 70px;
+}
+
+.progress {
+    position: absolute;
+    font-family:'PressStart2P-Regular';
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px darkslategrey;
+    left: 10px;
+}
+
+.lives {
+    position: absolute;
+    font-family:'PressStart2P-Regular';
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 2px 2px 3px darkslategrey;
+    right: 10px;
+}
+
+
+.other-character {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+    z-index: 50;
+}
+
+.pufferfish {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+}
+
+.pufferfish1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 60px;
+    width: 60px;
+}
+
+.healthy-food1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+
+.healthy-food2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+    width: 40px;
+}
+
+.healthy-food3 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+
+.healthy-food4 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+    width: 20px;
+}
+
+.rotten-food1 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+    width: 40px;
+}
+
+.rotten-food2 {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20px;
+    width: 40px;
+}
+
+.main-character {
+    position: absolute;
+    height: 60px;
+    width: 40px;
+    z-index: 100;
+}
+
+.game-over {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 600px;
+    width: 1000px;
+    z-index: 400;
+    font-size: 80px;
+    font-family: 'PressStart2P-Regular';
+    font-weight: 500;
+    text-align: center;
+}
+
+.final-score {
+    margin-top: 35px;
+    z-index: 500;
+    font-size: 60px;
+    font-family: 'PressStart2P-Regular';
+    font-weight: 700;
+    text-shadow: 3px 3px 10px black;
+    color: peru;
+    text-align: center;
+}
+
+.game-over-text {
+    margin-top: 130px;
+    z-index: 500;
+    font-size: 80px;
+    font-family: 'PressStart2P-Regular';
+    font-weight: 800;
+    text-shadow: 3px 3px 10px black;
+    color: peru;
+    text-align: center;
+}
+
+#game-over-img {
+    filter: brightness(20%);
+}
